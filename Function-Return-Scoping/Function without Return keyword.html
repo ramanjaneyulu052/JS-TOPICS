@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function_Return_Scoping_this_keyword</title>
+</head>
+<body>
+    <h1>Function without return keyword</h1>
+    <script>
+function myfun()
+{
+    //return &then print the result from the function
+    document.write("function_statement_result with return <br/>")
+}
+var res=myfun()
+document.write(res)
+    </script>
+    <br/><br/>
+
+    <h1>Function with return keyword</h1>
+    <script>
+function my()
+{
+    //return &then print the result from the function
+    return "function_statement_result with return <br/>"
+}
+var res1=my()
+document.write(`${res1} <br/>`)
+ var res2=
+ {
+    name:my()
+ }
+ document.write(`${res2.name}<br/>`)
+    </script>
+    <br/><br/>
+
+</body>
+</html>

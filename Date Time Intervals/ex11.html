@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Remove</title>
+</head>
+<body>
+    <button onclick="adding()">Add_Values_in_middle</button>&nbsp;
+    <button onclick="removing()">Removing_Values_in_middle</button>&nbsp;
+    <p id="demo"></p>
+    <script> 
+                    // 0        1        2       3
+        var fruits=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo").innerHTML=fruits;
+        function adding()
+        {
+            fruits.splice(0,0,"hello","hi");
+            //index_positon, no_values_for_remove,"add new values"
+            document.getElementById("demo").innerHTML=fruits;
+        }
+        function removing()
+        {
+            fruits.splice(0,1);
+            document.getElementById("demo").innerHTML=fruits;
+        }
+
+    </script>
+</body>
+</html>

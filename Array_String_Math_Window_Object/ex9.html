@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Present Date</title>
+</head>
+
+<body>
+    <!--DATE-->
+    <script>
+        var date = new Date();
+        document.write(date);
+    </script>
+    <br /> <br />
+
+    <!--FUNCTION-->
+    <script>
+        function user(num1) {
+            document.write(num1);
+        }
+        user(100)
+    </script>
+    <br /> <br />
+
+    <!--RETURN-->
+    <script>
+        function user(num1) {
+            return num1 + 5
+        }
+        var output = user(10);
+        document.write(output);
+    </script>
+     <br /> <br />
+    
+     <!--if-->
+     <script>
+    var marks= 85;                             //if condition is true
+    if (marks>80)
+    {
+       document.write('Grade-A')
+    }
+    </script>
+      <br /> <br />
+    
+      <!--if--else-->
+      <script>
+     var marks= 75;                            //if condition is false but use else
+     if (marks>80)
+     {
+        document.write('Grade-A')
+     }
+     else 
+     {
+        document.write('Grade-B')
+     }
+     </script>
+      <br /> <br />
+    
+      <!--if--elseif--else-->
+      <script>
+     var marks= 40;                            //if 2conditions are false but use else if
+     if (marks>80)
+     {
+        document.write('Grade-A')
+     }
+     else if(marks>55)
+     {
+        document.write('Grade-B')
+     }
+     else 
+     {
+        document.write('Grade-C')
+     }
+     </script>
+       <br /> <br />
+    
+       <!--For-->
+       <script>
+    for (var i=1; i<6; i++)
+    {
+        document.write('Hai Hyderabad <br/>')
+    }
+      </script>
+        <br /> <br />
+    
+        <!--While-->
+        <script>
+        var output=0; 
+        while(output<=10)
+        {
+       console.log(output);
+          output++;
+        }
+       </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global and Local Variable</title>
+</head>
+<body>
+    <script>
+        // Global-variable
+        var email; //undefined variable
+        function myfun()
+        {
+            //Local-variable
+            var phone=7896541230
+
+             // Global-variable
+            var email="Rama@gmail.com"
+            document.write(`Local-variable from myFUN-function-${phone}<br/>`)
+            document.write(`Global-variable from myFUN-function-${email}<br/>`)
+        }
+        myfun()
+            document.write(`Global-variable outside-function-${email}<br/>`)
+      
+    </script>
+</body>
+</html>

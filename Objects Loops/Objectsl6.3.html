@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Data Types (emp full details)</title>
+    <script src="./objectsl6.3.js"></script>
+</head>
+<body>
+<script>
+    document.write(`id: ${emp.id} <br/>`)
+    document.write(`name:${emp.name}<br/>`)
+    document.write(`maritual status:${emp.married}<br/>`)
+
+    document.write(`language's:${emp.language} <br/>`)
+
+    for(var index=0; index<=emp.language.length;index++)
+    {
+        document.write(`<li> ${emp.languages[index]} </li>`)
+    }
+  
+    document.write(`children's: <br/>`)
+    document.write(`elder:${emp.childrens.elder} <br/>`)
+    document.write(`ypunger:${emp.childrens.younger} <br/>`)
+
+    document.write(`<br/> <br/>`)
+    document.write(`children's details: <br/>`)
+    for(var e of emp.childrensdetails)
+    {
+        document.write(`<ul>
+            <li>${e.name}</li>
+            <li>${e.age}</li>
+            </ul>`)
+    }
+</script>
+    
+</body>
+</html>

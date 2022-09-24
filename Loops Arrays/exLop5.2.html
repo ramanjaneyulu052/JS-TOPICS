@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown List Box</title>
+</head>
+<body>
+    <select>
+        <option>Days</option>
+        <script>
+           var x=1, res=""
+           while(x<=31)
+           {
+            res+=`<option> ${x}</option>`
+            x++;
+           }
+           document.write(res)
+
+        </script>
+        </select>
+        
+        <select>
+            <option>Months</option>
+            <script>
+               var x=1, res=""
+               while(x<=12)
+               {
+                res+=`<option> ${x}</option>`
+                x++;
+               }
+               document.write(res)
+    
+            </script>
+            </select>
+
+            <select>
+                <option>Years</option>
+                <script>
+                   var year=1901, res=""
+                   while(year<=2022)
+                   {
+                    res+=`<option> ${year}</option>`
+                    year++;
+                   }
+                   document.write(res)
+        
+                </script>
+                </select>
+                <select>
+                    <option>Years</option>
+                    <script>
+                       var year=2022, res=""
+                       while(year>=1901)
+                       {
+                        res+=`<option> ${year}</option>`
+                        year--;
+                       }
+                       document.write(res)
+            
+                    </script>
+                    </select>
+</body>
+</html>

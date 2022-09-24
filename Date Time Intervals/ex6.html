@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Intervals</title>
+    <script>
+        window.setInterval(() =>
+        {
+        var d=new Date()
+        var year,month,day,date,h,m,s,ms,ltime;
+    
+        var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    
+        year=d.getFullYear()
+        month=d.getMonth()
+        day=d.getDay()
+        date=d.getDate()
+        h=d.getHours()
+        m=d.getMinutes()
+        s=d.getSeconds()
+        // ms=d.getMilliSeconds()
+        ltime=d.toLocaleTimeString()
+        
+        dateDetails=`${date}-${months[d.getMonth()]}-${year}`
+        
+        document.getElementById('dt24').innerText=`${dateDetails}[${h}:${m}:${s}]`
+        
+        document.getElementById('dt12').innerText=`${dateDetails}[${ltime}]`
+
+    },1000)
+
+    </script>
+</head>
+<body>
+
+<h2>JS_DATE_TIME [24 Hours]</h2>
+<time id="dt24"></time>
+
+<h2>JS_DATE_TIME [12 Hours]</h2>
+<time id="dt12"></time>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops (While Loop)</title>
+
+</head>
+<body>
+    <script>
+        /* print 1 to 10 numbers */
+        var x=1 //step-1
+        while (x<=10) //step-2  -> 1<=10-true, 2<=10-true, 3<=10---- 10<=10-true
+        {
+          document.write(`x value is:${x} <br/>`) //step-3 //1
+          x++; //step-4
+        }
+    </script>
+    <br><br>
+    <script>
+        var x=1 
+        while (x<=10) 
+        {
+          document.write(` <h1> x value is:${x} </h1> <br/>`) 
+          x++; 
+        }
+    </script>
+    <br><br>
+    <script>
+        var x=1 
+        while (x<=10) 
+        {
+          document.write(` <li> x value is:${x} </li> <br/>`) 
+          x++; 
+        }
+    </script>
+     <br><br>
+     
+    <ul>
+         <script>
+        var x=1, res=""
+        while (x<=10) 
+        {
+          res+=`<li> x value is : ${x} </li>`
+          x++; 
+        }
+        document.write(res)
+        </script>
+    </ul>
+
+
+</body>
+</html>

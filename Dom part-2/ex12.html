@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom part-2 my Name using return and this keyword </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+   
+</head>
+<body>
+    <script>
+        var user=
+        {
+            fname:'Ramanjaneyulu',
+            lname: 'uppalapati',
+            fullname: function()
+        {
+            // return `${user.fname}-${user.lname}`
+            return "This is user_object_function_type_property"
+        
+        }
+    }
+        document.write(`${user.fname}-${user.lname}<br/>`)
+    </script>
+</body>
+ 
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math.random() CAPTCHA_CODE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+
+    <script>
+        function myfun()
+        {
+        var r=Math.random()*100000
+        document.getElementById('captcha').innerText=Math.ceil(r)
+    }
+    </script>
+    <style>
+        output{
+            background-color: rgba(212, 38, 183, 0.466);
+            padding: 0px 20px;
+            letter-spacing: 2px;
+            font-family:'Blackadder ITC';
+            color: rgb(20, 20, 218);
+            font-size: 50px;
+        }
+        input{
+            border-color: red;
+            padding: 10px 20px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container p-5 text-center">
+        <output id="captcha">779846</output>
+        <input type="text">
+        <button onclick="myfun()">Refresh</button>
+    </div>
+</body>
+</html>

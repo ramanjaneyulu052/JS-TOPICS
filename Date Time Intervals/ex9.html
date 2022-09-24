@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> norun button birthday wishes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+        textarea {
+            height: 400px;
+            resize: none;
+            border: groove lightgray 10px;
+        }
+    </style>
+    <script>
+        function myfun(request) 
+        {
+            //Target input_by_Id_Reference----
+            var textarea_dom=document.getElementById('sourcecode')
+           
+           textarea_dom.value=request  //li_textarea assigned to textarea
+
+            //Target output_img_by_Id_Reference----
+            var output_dom = document.getElementById('code_result')    
+
+            //update textarea_input_As_Response to output_tag
+            output_dom.innerHTML=250-textarea_dom.value.length
+         }
+    </script>
+
+</head>
+<body>
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-lg-6">
+               <div class="mb-2">
+                <label class="form-label">Enter Message</label>
+               </div>
+               <textarea type="text"onkeyup="myfun(this.value)" class="form-control" id="sourcecode"></textarea>
+               Left characters:<output id="code_result">250</output>
+            </div>
+
+            <div class="col-lg-6">
+                <h4 class="px-4"> Birthday Wishes </h4>
+                <div class="bwishes">
+
+                    <ul class="list-group">
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+                            Wishing a day to remember, filled with love and prosperity, and your heart’s desires. Have a great birthday ahead! 
+                        </li>
+                        <li class="list-group-item" onclick="myfun(this.innerText)">
+                            Wishing you a beautiful day with happiness and good health forever! Happy Birthday!
+                          </li>
+                          <li class="list-group-item" onclick="myfun(this.innerText)">
+                            Wishing You a day that is as special in every way as you are. Happy birthday!
+                          </li>
+                          <li class="list-group-item" onclick="myfun(this.innerText)">
+                            Your birthday is a very special day for me as it reminds us that you came on this day by bringing new hopes and joy into our lives. Have a wonderful birthday.
+                          </li>
+                          <li class="list-group-item" onclick="myfun(this.innerText)">
+                            May all your wishes and desires come true! Have an amazing year ahead
+                           </li>
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Of Loop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"> 
+    <script src="Objectsl6.2.js"></script>
+</head>
+<body>
+    <!-- <script>
+        {
+        document.write(`<ul>
+                          <li>${e.id}</li>
+                          <li>${e.name}</li>
+                          <li>${e.email}</li>
+                          <li>${e.phone}</li>
+
+                        </ul>`)
+        }
+    </script> -->
+
+    <h3 class="text-center py-2">EMP-DATA</h3>
+    <table class="table table-light text-center table-bordered w-50 mx-auto">
+        <thead class="table-primary">
+            <tr>
+                <!-- <script>
+                    for (var key in emp[0])
+                    {
+                        document.write(`<th>${key.touppercase()}</th>`)
+                    }
+                </script> -->
+                <th>ID</th>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>PHONE</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <script>
+                for (var e of emp)
+                {
+                    document.write(`<tr>
+                        <td>${e.id}</td>
+                        <td>${e.name}</td>
+                        <td>${e.email}</td>
+                        <td>${e.phone}</td>
+                        
+                        </tr>`)
+                }
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>

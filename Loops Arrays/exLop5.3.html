@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>print Array Data Directly </h1>
+    <script>
+            var months=["January", "February","March", "April","May","June","July","August","Septmber","Octmber","November", "December"]
+            document.write(months)
+    </script>
+    <br><br>
+      <h1>Total number values in the Array</h1>
+      <script>
+              var months=["January", "February","March", "April","May","June","July","August","Septmber","Octmber","November", "December"]
+              document.write(`Total values of the Array is :${months.length}`)
+      </script>
+    <br><br>
+    <h1>Total number of characters in given string/request</h1>
+    <script>
+            var username="Ramanjaneyulu"
+            document.write(`Total number of characters is :${username.length}`)
+    </script>
+     <br><br>
+     <h1> Access Array data using index </h1>
+     <script>
+            var emp=[1, "Ram", "Rama@gmail.com","786541230","HYD"]
+            document.write(`${"Eid is:"+emp[0]}<br/>`)
+     </script>
+       <br><br>
+       <h1> Access Array data using index </h1>
+       <script>
+              var emp=[1, "Ram", "Rama@gmail.com","786541230","Hyd"]
+              document.write(`
+              <h2>${ emp[1] }</h2>
+              <h3>${emp[2]}</h3>
+              <h4>${emp[3]}</h4>`)
+
+              document.write(`First index value:${emp[0]}<br/>`)
+              document.write(`Last index value:${emp[emp.length-1]}<br/>`)
+
+        </script>
+          <br><br>
+          <select>
+          <script>
+                  var months=["January", "February","March", "April","May","June","July","August","Septmber","Octmber","November", "December"]
+                  var index=0, res=""
+                  while(index<months.length)
+                  {
+                    res+=`<option>${index}${months[index]}</option>`
+                    index++;
+                  }
+                  document.write(res)
+          </script>
+          </select>
+
+</body>
+</html>

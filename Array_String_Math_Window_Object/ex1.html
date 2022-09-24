@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding</title>
+</head>
+<body>
+    <button onclick="myfunction()">Try it</button>
+    
+    <p id="demo"></p>
+    <script> 
+                    
+        var fruits=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo").innerHTML=fruits;
+
+        function myfunction()
+        {
+            fruits.push("Kiwi","Hello");
+            document.getElementById("demo").innerHTML=fruits;
+        }
+        
+        </script>
+
+<br/> <br/>
+<script>
+    var no=[]
+    for( var i=1; i<10; i++)
+    {
+        no.push(i)
+    }
+    document.write(no)
+
+</script>
+
+
+</body>
+</html>

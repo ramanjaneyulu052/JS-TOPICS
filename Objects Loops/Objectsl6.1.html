@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>custom objects</title>
+</head>
+<body>
+    
+  <!-- <script>
+        var emp=[];
+        emp [`id`]=1;
+        emp [`name`]="Rama";
+        emp [`email`]="Rama@gmail.com";
+        emp [`phone`]=7896541230
+
+    //Object.property
+    document.write(`id: ${emp.id} <br/>`)              
+    document.write(`id: ${emp.name} <br/>`)         
+    document.write(`id: ${emp.email} <br/>`)
+    document.write(`id: ${emp.phone}<br/> <br/>`)
+
+    //Object[`key`]
+    document.write(`id: ${emp[`id`]} <br/>`)
+    document.write(`id: ${emp[`name`]} <br/>`)
+    document.write(`id: ${emp[`email`]} <br/>`)
+    document.write(`id: ${emp[`phone`]} <br/> <br/>`)
+   </script> -->
+
+
+   <script>
+   //Object[index].key
+   var emp=[
+       {
+        id :'1',
+        name:'Ram',
+        email:'Ram@gmail.com',
+        phone:7896541230,
+       },
+       {
+        id:'2',
+        name:'Manu',
+        email:'Manu@gmail.com',
+        phone:7896541231
+       },
+       {
+        id:'3',
+        name:'Chandu',
+        email:'Chandu@gmail.com',
+        phone:7896541232
+       },
+       {
+        id:'4',
+        name:'Hanu',
+        email:'Hanu@gmail.com',
+        phone:7896541233
+        }
+]
+        
+         //Object.property/key
+         document.write(`id:${emp[0].id} <br/>`)
+         document.write(`id:${emp[0].name} <br/>`)
+         document.write(`id:${emp[0].email} <br/>`)           //emp[0] [`id`]/ emp[0].id
+         document.write(`id:${emp[0].phone} <br/> <br/>`)
+
+         document.write(`id:${emp[1].id} <br/>`)
+         document.write(`id:${emp[1].name} <br/>`)            //emp[1] [`id`]/ emp[1].id
+         document.write(`id:${emp[1].email} <br/>`)
+         document.write(`id:${emp[1].phone} <br/><br/>`)
+ 
+         document.write(`id:${emp[2].id} <br/>`)
+         document.write(`id:${emp[2].name} <br/>`)            //emp[2] [`id`]/ emp[2].id
+         document.write(`id:${emp[2].email} <br/>`)
+         document.write(`id:${emp[2].phone} <br/><br/>`)
+         
+         document.write(`id:${emp[3].id} <br/>`)
+         document.write(`id:${emp[3].name} <br/>`)            //emp[3] [`id`]/ emp[3].id
+         document.write(`id:${emp[3].email} <br/>`)
+         document.write(`id:${emp[3].phone} <br/>`)
+
+
+
+   </script>
+   
+</body>
+</html>

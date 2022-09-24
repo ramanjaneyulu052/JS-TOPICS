@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Time Intervals</title>
+</head>
+<body>
+<script>
+    var d=new Date()
+    var year,month,day,date,h,m,s,ms,ltime;
+
+    year=d.getFullYear()
+    month=d.getMonth()+1
+    day=d.getDay()
+    date=d.getDate()
+    h=d.getHours()
+    m=d.getMinutes()
+    s=d.getSeconds()
+    // ms=d.getMilliSeconds()
+    ltime=d.toLocaleTimeString()
+
+    document.write(`Today Date:${ date } <br/>`)
+    document.write(`Year :     ${ year } <br/>`)
+    document.write(`Month:     ${ month } <br/>`)
+    document.write(`Day:       ${ day } <br/>`)
+    document.write(`H:M:S -    ${h}-${m}-${s} <br/>`)
+    document.write(`LOCAL_TIME - ${ltime} <br/>`)
+
+    document.write(`${date}-${month}-${year} [${h}:${m}:${s}]`)
+</script>
+</body>
+</html>

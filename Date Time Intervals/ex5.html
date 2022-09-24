@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Intervals</title>
+    <script>
+        var dateTime=function()
+        {
+        var d=new Date()
+        var year,month,day,date,h,m,s,ms,ltime;
+    
+        var months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    
+        year=d.getFullYear()
+        month=d.getMonth()
+        day=d.getDay()
+        date=d.getDate()
+        h=d.getHours()
+        m=d.getMinutes()
+        s=d.getSeconds()
+        // ms=d.getMilliSeconds()
+        ltime=d.toLocaleTimeString()
+    
+       document.getElementById('dtime').innerText=`${date}-${months[d.getMonth()]}-${year}- [${h}:${m}:${s}]`
+    }
+    
+    window.setInterval('dateTime()',1000)
+    </script>
+</head>
+<body>
+<h2>JS_DATE_TIME</h2>
+<time id="dtime"></time>
+</body>
+</html>
